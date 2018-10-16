@@ -1,0 +1,7 @@
+$imgUrl:"../../images/";
+$list:();
+${{options}}:'#{$imgUrl}{{spritesheet.escaped_image}}';
+{{#items}}
+    ${{name}} : {{px.x}}/$ppr {{px.y}}/$ppr {{px.offset_x}}/$ppr {{px.offset_y}}/$ppr {{px.width}}/$ppr {{px.height}}/$ppr {{px.total_width}}/$ppr {{px.total_height}}/$ppr ${{../options}} {{name}};
+    $list:append($list,${{name}});
+{{/items}}

@@ -1,0 +1,2 @@
+node-sass无法安装：
+npm install node-sass --save-dev --sass-binary-site=https://npm.taobao.org/mirrors/node-sass/ --registry=https://registry.npm.taobao.org

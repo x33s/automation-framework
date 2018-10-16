@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=640, user-scalable=no, target-densitydpi=device-dpi">
+    <title>佛山移动晒账单</title>
+    <link href="../css/common/layout.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="container">
+    <div class="pop_module loading" id="loading" style="background-color:#fff;">
+        <table>
+            <tr>
+                <td>
+                    <div class="progressBox">
+                        <div class="progress" id="progress">
+                            <i class="com_icon01"></i>
+                            <img src="../images/butterfly.png" alt="" class="butterfly">
+                            <div class="percent" id="percent">90%</div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <!-- 首页 Start -->
+    <div class="mainContainer page02">
+        <!-- dataCon03 Start -->
+        <div class="dataCon03"></div>
+        <!-- dataCon03 End -->
+        <!-- innerPageBox Start -->
+        <div class="innerPageBox" id="innerPageBox">
+            <!-- dataCon04 Start -->
+            <div class="dataCon04">
+                <div class="txt02" style=" margin-top:25px;">
+                    你的好友在复活节送你一个加料彩蛋，<br/>猜猜里面是啥料？
+                </div>
+                <div class="txt02">
+                    猜中了有“<b>充值送100M流量</b>”奖励哦~
+                </div>
+            </div>
+            <!-- dataCon04 Start -->
+            <!-- dataCon08 Start -->
+            <div class="dataCon08">
+                <i class="page_ele04" v-on:click="showEgg"></i>
+                <!--<i class="com_data data01_01"></i>-->
+            </div>
+            <!-- dataCon08 End -->
+            <!-- dataCon09 Start -->
+            <div class="dataCon09">
+                <div class="dataCon09_title">
+                    <i class="sprite_ele04"></i>
+                </div>
+                <div class="dataCon09_box">
+                    <label v-for="(radio,index) in radios" v-bind:class="{'checked':radio.flag,'com_radio01':true}" v-on:click="radioChange(index)">
+                        <i class="com_check"></i>
+                        <span class="txt">{{radio.txt}}</span>
+                    </label>
+                        <!--<label class="com_radio01">-->
+                        <!--<input type="radio" name="radio01">-->
+                        <!--<i class="com_check"></i>-->
+                        <!--<span class="txt">复活节兔子</span>-->
+                    <!--</label>-->
+                    <!--<label class="com_radio01">-->
+                        <!--<input type="radio" name="radio01">-->
+                        <!--<i class="com_check"></i>-->
+                        <!--<span class="txt">复活节岛石</span>-->
+                    <!--</label>-->
+                    <!--<label class="com_radio01">-->
+                        <!--<input type="radio" name="radio01">-->
+                        <!--<i class="com_check"></i>-->
+                        <!--<span class="txt">复活节火腿</span>-->
+                    <!--</label>-->
+                    <!--<label class="com_radio01">-->
+                        <!--<input type="radio" name="radio01">-->
+                        <!--<i class="com_check"></i>-->
+                        <!--<span class="txt">珍藏靓号0元选</span>-->
+                    <!--</label>-->
+                </div>
+            </div>
+            <!-- dataCon09 End -->
+            <!-- dataCon10 Start -->
+            <div class="dataCon10">
+                <a v-bind:href="link" class="sprite_btn02"></a>
+            </div>
+            <!-- dataCon10 End -->
+        </div>
+        <!-- innerPageBox End -->
+        <!-- dataCon02 Start -->
+        <div class="dataCon02">
+            <a href="#" class="item">
+                <i class="sprite_icon01"></i>
+                <span class="txt">游戏规则</span>
+            </a>
+            <a href="#" class="item">
+                <i class="sprite_icon02"></i>
+                <span class="txt">奖励资格查询</span>
+            </a>
+            <i class="sprite_ele01"></i>
+        </div>
+        <!-- dataCon01 End -->
+    </div>
+    <!-- 首页 Start -->
+</div>
+<script src="../js/vendor.bundle.js"></script>
+<script src="../js/guessEgg.js"></script>
+</body>
+</html>

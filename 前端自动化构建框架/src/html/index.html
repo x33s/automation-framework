@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=640, user-scalable=no, target-densitydpi=device-dpi">
+    <title>佛山移动晒账单</title>
+    <link href="../css/common/layout.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="container">
+    <div class="pop_module loading" id="loading" style="background-color:#fff;">
+        <table>
+            <tr>
+                <td>
+                    <div class="progressBox">
+                        <div class="progress" id="progress">
+                            <i class="com_icon01"></i>
+                            <img src="../images/butterfly.png" alt="" class="butterfly">
+                            <div class="percent" id="percent">90%</div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="app" class="app">
+        <router-view></router-view>
+    </div>
+    <!-- dataCon02 Start -->
+    <div class="dataCon02">
+        <a class="item" id="popBtn04">
+            <i class="sprite_icon01"></i>
+            <span class="txt">游戏规则</span>
+        </a>
+        <a class="item" id="popBtn03">
+            <i class="sprite_icon02"></i>
+            <span class="txt">奖励资格查询</span>
+        </a>
+        <i class="sprite_ele01"></i>
+    </div>
+    <!-- dataCon01 End -->
+</div>
+
+<script src="../js/vendor.bundle.js"></script>
+<script src="../js/index.js"></script>
+</body>
+</html>
